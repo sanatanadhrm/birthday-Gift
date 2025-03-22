@@ -13,7 +13,6 @@ import CardGift from "./card-gift";
 export const HeroParallax = ({ products }) => {
   const firstRow = [...products.slice(0, 7)]; // Duplikasi untuk infinite loop
   const secondRow = [...products.slice(8, 15)];
-  const thirdRow = [...products.slice(16, 23)];
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
