@@ -10,6 +10,7 @@ export const Meteors = ({ number, className }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 w-screen h-screen pointer-events-none z-40" // ✅ Sticky di atas layar
     >
       {meteors.map((el, idx) => {
         const meteorCount = number || 20;
@@ -25,10 +26,12 @@ export const Meteors = ({ number, className }) => {
               className
             )}
             style={{
-              top: "-40px", // Start above the container
-              left: position + "px",
+              top: Math.random() * -window.innerHeight + "px",
+              left: Math.random() * window.innerWidth + "px",
               animationDelay: Math.random() * 5 + "s", // Random delay between 0-5s
-              animationDuration: Math.floor(Math.random() * (10 - 5) + 5) + "s", // Keep some randomness in duration
+              animationDuration: Math.floor(
+                Math.random() * (15 - 10) + 30 + "s"
+              ), // Keep some randomness in duration
             }}
           ></span>
         );
@@ -36,3 +39,5 @@ export const Meteors = ({ number, className }) => {
     </motion.div>
   );
 };
+
+export default Meteors;

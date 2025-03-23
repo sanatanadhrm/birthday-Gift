@@ -10,6 +10,7 @@ import LoveLetter from "./love-letter";
 import MusicControl from "./music-control";
 import Playlist from "./playlist";
 import CardGift from "./card-gift";
+import Meteors from "./meteors";
 export const HeroParallax = ({ products }) => {
   const firstRow = [...products.slice(0, 7)]; // Duplikasi untuk infinite loop
   const secondRow = [...products.slice(8, 15)];
@@ -71,6 +72,7 @@ export const HeroParallax = ({ products }) => {
         <Playlist />
         <LoveLetter />
       </div>
+      <Meteors number={250} />
     </AuroraBackground>
   );
 };

@@ -1,6 +1,6 @@
 import blue from "./blue.m4a";
-import lewat_kata from "./lewat_kata.m4a";
-import call_this_love from "./call_this_love.mp3";
+import bertaut from "./bertaut.m4a";
+import taylor_swift from "./taylor_swift.m4a";
 
 const musics = [
   {
@@ -9,14 +9,15 @@ const musics = [
     src: blue,
   },
   {
-    title: "Bercinta Lewat Kata",
-    artist: "Donne Maula",
-    src: lewat_kata,
+    title: "Bertaut",
+    artist: "Nadin Amizah",
+    src: bertaut,
   },
+
   {
-    title: "Call This Love",
-    artist: "Elliot James Reay",
-    src: call_this_love,
+    title: "Gorgeous",
+    artist: "Taylor Swift",
+    src: taylor_swift,
   },
 ];
 

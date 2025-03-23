@@ -36,14 +36,14 @@ export const Header = () => {
           <TypeAnimation
             sequence={[
               "To the most beautiful soul I know...",
-              1000,
-              "To my best friend and soulmate...",
-              1000,
+              2000,
+              "To my best love and soulmate...",
+              2000,
               "To the love of my life...",
-              1000,
+              2000,
             ]}
             wrapper="p"
-            speed={50}
+            speed={40}
             className="text-xl md:text-2xl font-dancingscript mb-8 text-[#fff] drop-shadow-md"
             repeat={Infinity}
           />

@@ -28,7 +28,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((product, idx) => (
           <GlareCard
-            className="relative flex flex-col items-center justify-center"
+            className="relative flex flex-col items-center justify-center z-50"
             idx={idx}
             product={product}
             key={idx}
